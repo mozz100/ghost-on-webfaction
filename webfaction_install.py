@@ -35,6 +35,9 @@ def create(app_name, server, session_id):
     # Restart the app
     server.system(session_id, 'bin/stop && bin/start')
 
+    # Output the app id to stdout for webfaction
+    print app["id"]
+
 def delete(app_name, server, session_id):
     server.delete_app(session_id, app_name)
 

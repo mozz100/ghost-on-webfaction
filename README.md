@@ -20,4 +20,4 @@ suggestions very welcome (please use github issues).
 
   [1]: http://blog.ghost.org/ghost-0-5/
   [2]: https://community.webfaction.com/questions/15432/update-ghost
-  [3]: https://my.webfaction.com/app/new-application?script_url=https%3A%2F%2Fraw.githubusercontent.com%2Fmozz100%2Fghost-on-webfaction%2Fmaster%2Fwebfaction_install.py
+  [3]: https://my.webfaction.com/new-application?script_url=https%3A%2F%2Fraw.githubusercontent.com%2Fmozz100%2Fghost-on-webfaction%2Fmaster%2Fwebfaction_install.py

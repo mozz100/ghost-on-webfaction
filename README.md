@@ -12,7 +12,8 @@ This custom install script for Webfaction installs a node.js app, then checks ou
 (basically a package.json file and an index.js).  It creates a config.js containing the correct port, so things just work
 on Webfaction.  Did I mention I love webfaction?
 
-[Click here to install in your webfaction account][3]
+[Click here to install in your webfaction account][3] - note that it takes a while, because the npm install isn't too quick.  The
+Webfaction "spinner" might be on screen for a minute or two: be patient!
 
 This might have disadvantages I haven't thought of. I am looking for feedback.  Anyone else up for giving this a go? Pull requests and
 suggestions very welcome (please use github issues).

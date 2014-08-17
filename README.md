@@ -18,6 +18,10 @@ Webfaction "spinner" might be on screen for a minute or two: be patient!
 This might have disadvantages I haven't thought of. I am looking for feedback.  Anyone else up for giving this a go? Pull requests and
 suggestions very welcome (please use github issues).
 
+As an extra bonus, this could easily scale up such that one `index.js` could serve multiple ghost blogs from a single process (if
+you wanted to do that, to save memory, perhaps).  You'd need to create extra applications in the Webfaction control panel, note their
+port numbers, and then extend `index.js` and create extra `config.js` files.
+
 
   [1]: http://blog.ghost.org/ghost-0-5/
   [2]: https://community.webfaction.com/questions/15432/update-ghost

@@ -3,3 +3,4 @@ lib
 run
 node_modules
 content
+config.js

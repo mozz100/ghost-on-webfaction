@@ -6,17 +6,6 @@ This is way to get the best of both worlds, and am looking for feedback.  Anyone
 
 Since ghost can operate as an npm module, create one of Webfactions node.js 1-click installers and then, in webapps/<app>, add a package.json and an index.js.
 
-* Use webfaction 1-click installer to create a Node.js 0.10.24 application in your account
-
-cd ~/webapps/<appname>
-cat hello-world.js # make a note of the allocated port number (e.g. 32606)
-git clone --no-checkout git@github.com:mozz100/ghost-on-webfaction.git ./checkout.tmp
-mv checkout.tmp/.git . && rm -r checkout.tmp
-git reset --hard HEAD
-bin/npm install
-sed -i -e "s/hello-world/index/" -e "s/nohup/NODE_ENV=production nohup/" bin/start
-cp -r node_modules/ghost/content ./content
-NODE_ENV=production bin/node index.js
 
 
 

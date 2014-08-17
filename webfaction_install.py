@@ -1,4 +1,4 @@
------BEGIN WEBFACTION INSTALL SCRIPT-----
+#-----BEGIN WEBFACTION INSTALL SCRIPT-----
 #!/usr/local/bin/python2.5
 
 """
@@ -50,4 +50,5 @@ if __name__ == '__main__':
         main(*sys.argv[1:])
     except xmlrpclib.Fault, e:
         print e.faultString
------END WEBFACTION INSTALL SCRIPT-----
+
+#-----END WEBFACTION INSTALL SCRIPT-----

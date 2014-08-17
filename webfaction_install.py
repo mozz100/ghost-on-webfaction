@@ -23,7 +23,7 @@ def create(app_name, server, session_id):
         'sed -i -e "s/hello-world/index/" -e "s/nohup/NODE_ENV=production nohup/" bin/start',
         # Initial content directory and config file.
         'cp -r node_modules/ghost/content ./content',
-        'cp -r config-sample.js config.js',
+        'cp config-sample.js config.js',
         # Remove hello-world.js
         'rm hello-world.js'
     )
@@ -40,7 +40,10 @@ def delete(app_name, server, session_id):
 
 def main(action, username, password, machine, app_name, autostart, extra_info):
     server = xmlrpclib.Server('https://api.webfaction.com/')
-    session_id, account = server.login(username, password, machine)
+    if machine=="":
+        session_id, account = server.login(username, password)
+    else:
+        session_id, account = server.login(username, password, machine)
 
     # Create/Delete Application
     globals()[action](app_name, server, session_id)

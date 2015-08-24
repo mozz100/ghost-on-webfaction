@@ -18,6 +18,9 @@ config = {
         server: {
             host: '127.0.0.1',
             port: '<insert port here>'
+        },
+        paths: {
+            contentPath: path.join(__dirname, '/content/')  // see https://github.com/mozz100/ghost-on-webfaction/issues/1
         }
     }
 };

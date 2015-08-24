@@ -1,5 +1,5 @@
 #-----BEGIN WEBFACTION INSTALL SCRIPT-----
-#!/usr/local/bin/python2.5
+#!/usr/local/bin/python2.7
 
 """
 Ghost as an npm module on webfaction
